@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>TRNOG - dns amplification taraması</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="css/theme.css" type="text/css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+		<div class="container">
+			<button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
+				<p class="navbar-brand mb-0 text-white">TRNOG</p>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar14">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"> <a class="nav-link" href="#">Tarama</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link" href="#">Üyelik</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link" href="#">API</a>
+					</li>
+				</ul>
+				<p class="d-none d-md-block lead mb-0  text-white">TRNOG</p>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mx-1">	<a class="nav-link" href="#">İletişim</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="py-10 text-center">
+		<div class="container">
+			<div class="row">
+				<div class="mx-auto col-lg-12">
+					<br><br><br>
+					<h2><b>1.1.1.0/24</b> için veri tabanımızda <b>34</b> kayıt bulunmuştur!</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-responsive">
+						<table class="table table-bordered ">
+							<thead class="thead-dark">
+								<tr>
+									<th>#</th>
+									<th>First</th>
+									<th>Last</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+								</tr>
+								<tr>
+									<th>2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry</td>
+									<td>the Bird</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center d-md-flex justify-content-between align-items-center">
+					<ul class="nav d-flex justify-content-center">
+						<li class="nav-item">Made with ❤️ Using BGP, Go, Bash, SQL, NMAP, HTML, CSS and lots of tea...</li>
+					</ul>
+					<p class="mb-0 py-1">© 2020 TRNOG. All rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+	$(document).ready(function(){
+		$.getJSON('test.json', function(data) {
+
+			var ASN;
+				var IPAddressList =	$(data).filter(function (i,n){});
+				for (var i=0;i<IPAddressList.length;i++)
+				{
+					IPAddres		= IPAddressList[i].file;
+
+					
+					alert(IPAddres);
+
+				}
+			
+		});
+	});
+	</script>
+</body>
+
+</html>

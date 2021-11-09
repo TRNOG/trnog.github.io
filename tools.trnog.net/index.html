@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TRNOG</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="css/theme.css?v0.0.1" type="text/css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+		<div class="container">
+			<button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
+				<p class="navbar-brand mb-0 text-white">TRNOG</p>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar14">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"> <a class="nav-link" href="#">Tarama</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link" href="#">Üyelik</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link" href="#">API</a>
+					</li>
+				</ul>
+				<p class="d-none d-md-block lead mb-0  text-white">TRNOG</p>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mx-1">	<a class="nav-link" href="#">İletişim</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="py-5 text-center">
+		<div class="container">
+			<div class="row">
+				<div class="mx-auto col-lg-12">
+					<h1>Ağınızın sağlık durumunu görüntüleyin</h1>
+					<p class="mb-4">Veritabanımızda IP adresi, Subnet yada AS Numarası kayıtları ile arama yapıp IP adreslerinizin kayıtlarına erişebilirsiniz.</p>
+						<div class="input-group">
+							<input type="text" class="form-control form-control-lg" placeholder="IP Adresi / Subnet / AS Numarası" id="Query" required>
+							<div class="input-group-append">
+								<button class="btn btn-primary" type="button" id="Submit">Sağlık Durumunu Kontrol Et</button>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="py-5 hide">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-responsive">
+						<table class="table table-bordered ">
+							<thead class="thead-dark">
+								<tr>
+									<th>ASN</th>
+									<th>IP Adresi</th>
+									<th>Sorun Türü</th>
+									<th>Tarama Tarihi</th>
+								</tr>
+							</thead>
+							<tbody class="Result">
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-5 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="p-10 col-md-12 d-flex flex-column justify-content-center ">
+					<h3 class="display-4">dns amplification</h3>
+					<p class="mb-4 lead">DNS Amplification, Distributed Denial-of-Service (DDoS) saldırı türlerinden biridir. Saldırının amacı tüm DDoS saldırılarında olduğu gibi, kullanıcıların ağ üzerinde bulunan sistemlere erişimlerini yavaşlatmak veya ağa bağlı bir sisteme, servise, web sitesine veya uygulamaya erişimlerini engellemektir. Çoğu DDoS saldırısı, kullanıcı ağının kaldırabileceği trafik yükünden daha büyük trafik yükü ile bombardımana maruz kaldığı için hacimseldir(volumetric). Bir konserin veya bir futbol maçının bitiminden sonra stadyumun yanındaki altı şeritli bir otoyolda binlerce otomobilin trafiği tıkayıp, normal trafik akışını bozması DDoS saldırısına örnek verilebilir.</p>
+				</div>
+			</div>
+		</div>
+		<div class="py-8">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<h5>Taranan IP Adresi</h5>
+								<p class="card-text">1.698.142</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<h5>Tespit Edilen IP Adresi</h5>
+								<p class="card-text">124.310</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<h5>Kurtarılan IP Adresi</h5>
+								<p class="card-text">142</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-5" style="background-image: linear-gradient(to left bottom, rgba(189, 195, 199, .75), rgba(44, 62, 80, .75)); background-size: 100%;">
+		<div class="container">
+     <img src="1.png">
+			<div class="row">
+				<div class="text-center mx-auto col-md-12">
+					<h1 class="text-white mb-4">Geliştirme Ekibimiz</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 p-3">
+					<div class="card">
+						<center>
+						<br>
+							<a href="https://osman.tc/" target="_blank">
+								<img class="img-fluid d-block rounded-circle" src="images/osmanmakal.jpg">
+							</a>
+							<br>
+							Osman Makal
+							<br><br>
+						</center>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-3">
+					<div class="card">
+						<center>
+						<br>
+							<a href="http://golgeli.net/" target="_blank">
+								<img class="img-fluid d-block rounded-circle" src="images/omergolgeli.jpg">
+							</a>
+							<br>
+							Ömer Gölgeli
+							<br><br>
+						</center>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-3">
+					<div class="card">
+						<center>
+						<br>
+							<a href="http://alptekin.info/" target="_blank">
+								<img class="img-fluid d-block rounded-circle" src="images/alptekinsunnetci.jpg">
+							</a>
+							<br>
+							Alptekin Sünnetci
+							<br><br>
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center d-md-flex justify-content-between align-items-center">
+					<ul class="nav d-flex justify-content-center">
+						<li class="nav-item">Made with ❤️ Using BGP, Go, Bash, SQL, NMAP, HTML, JS, CSS and lots of tea...</li>
+					</ul>
+					<p class="mb-0 py-1">© 2020 TRNOG. All rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="core.js?v0.2.0"></script>
+</body>
+</html>
